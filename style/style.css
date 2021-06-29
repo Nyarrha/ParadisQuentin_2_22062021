@@ -1,0 +1,64 @@
+body{
+    margin: 0 2em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+#logo img {
+    width: 20%;
+}
+
+header ul{
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+nav li {
+    display: inline-block;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.menu-nav li{
+    margin: 5px;
+}
+
+.btn-rechercher{
+    background-color: blue;
+    border: none;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 12px;
+}
+
+.filtres {
+    display: flex;
+}
+
+.filtres ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.filtres li{
+    border: 1px solid grey;
+    padding: 2px;
+    margin: px;
+    border-radius: 12px;
+}
+
+.filtres i{
+    color: blue;
+    background-color: red;
+    padding: 3px;
+    border-radius: 12px;
+}
