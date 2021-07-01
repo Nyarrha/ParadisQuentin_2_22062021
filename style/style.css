@@ -6,7 +6,6 @@ body{
 header {
     display: flex;
     justify-content: space-between;
-   
 }
 
 #logo img {
@@ -15,7 +14,6 @@ header {
 
 header ul{
     list-style-type: none;
-    justify-content: space-around;
 }
 
 nav li {
@@ -23,17 +21,50 @@ nav li {
     text-align: center;
 }
 
+nav{
+    font-size: 16px;
+}
+
+.hebergement {
+    border-top: solid 1px #0065FC;
+    padding-top: 20px;
+    margin-right: 14px;
+    color: #0065FC;
+}
+
+.activites{
+    margin-left: 14px;
+    margin-right: 14px;
+    color: #161616;
+}
+
+.inscription{
+    font-weight: bold;
+    margin-left: 14px;
+}
+
 nav a {
     text-decoration: none;
 }
 
 .menu-nav li{
-    margin: 5px;
+    
 }
 
 
 /** Présentation et recherche **/
-.btn-rechercher{
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.presentation strong{
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.btn-rechercher {
     background-color: blue;
     border: none;
     color: white;
