@@ -86,7 +86,7 @@ h2 {
 }
 
 #input-recherche {
-    border: 1px solid grey;
+    border: 1px solid #F2F2F2;
     padding: 10px 24px;
     font-weight: bold;
     font-size: large;
@@ -97,8 +97,6 @@ h2 {
 .filtres {
     display: flex;
     align-items: baseline;
-    font-weight: bold;
-    color: black;
 }
 
 .filtres p{
@@ -167,14 +165,36 @@ h2 {
 }
 
 .conteneur-hebergements img{
-    width: 8em;
     height: 8em;
+    margin: 6px;
+    border-radius: 18px;
 }
 
-.element1, .element2, .element3, .element4, .element5, .element6{
+.element1{
     display: flex;
     flex-direction: column;
     align-items: space-evenly;
     flex-wrap: wrap;
+    background-color: white;
+    border-radius: 18px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    white-space: nowrap;
 }
 
+.element1 p{
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.etoiles{
+    padding-left: 16px;
+    padding-bottom: 12px;
+}
+
+.etoiles-vide i{
+    color: #F2F2F2;
+}
