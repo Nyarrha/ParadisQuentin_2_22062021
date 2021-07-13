@@ -1,5 +1,5 @@
 body{
-    margin: 0 2em;
+    margin: 0 4em;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -99,11 +99,6 @@ h2 {
     align-items: baseline;
 }
 
-.filtres p{
-    font-weight: bold;
-    color: black;
-}
-
 .filtres ul{
     display: flex;
     list-style-type: none;
@@ -117,6 +112,11 @@ h2 {
     margin: 20px;
     margin-bottom: 0;
     text-decoration: none;
+}
+
+.filtres span{
+    font-weight: bold;
+    color:black;
 }
 
 .filtres i{
@@ -150,6 +150,11 @@ h2 {
 
 /*Partie principale hébergements*/
 
+.conteneur-principal{
+    display: flex;
+    border: black 1px solid;
+}
+
 .hebergements{
     display: flex;
     flex-wrap: wrap;
@@ -160,8 +165,8 @@ h2 {
     background-color: #F2F2F2;
     border-radius: 12px;
     padding: 18px;
-    width: 70%;
-    height: 45%;
+    width: 50%;
+    height: 40%;
 }
 
 .conteneur-hebergements img{
@@ -169,6 +174,8 @@ h2 {
     margin: 6px;
     border-radius: 18px;
 }
+
+/*Cadres éléments hébergements */
 
 .element1{
     display: flex;
@@ -183,6 +190,106 @@ h2 {
 }
 
 .element1 p{
+    padding-bottom: 0px;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.element2{
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 18px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+}
+
+.element2 p{
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.element3{
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 18px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+}
+
+.element3 p{
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.element4{
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 18px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+}
+
+.element4 p{
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.element5{
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 18px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+}
+
+.element5 p{
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.element6{
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 18px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+}
+
+.element6 p{
     padding-bottom: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
