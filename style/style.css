@@ -1,10 +1,14 @@
 body{
-    margin: 0 4em;
+    margin: 0 8em 0 8em;
     font-family: 'Raleway', sans-serif;
 }
 
 a{
     text-decoration: none;
+    color:black;
+}
+a:hover{
+    color: #0065FC;
 }
 
 
@@ -25,6 +29,10 @@ header ul{
 nav li {
     display: inline-block;
     text-align: center;
+    padding-top: 28px;
+}
+nav li:hover{
+    border-top: solid 1px #0065FC;
 }
 
 nav{
@@ -32,21 +40,20 @@ nav{
 }
 
 .nav-hebergement {
-    border-top: solid 1px #0065FC;
-    padding-top: 28px;
     margin-right: 24px;
-    color: #0065FC;
 }
 
 .nav-activites{
     margin-left: 24px;
     margin-right: 24px;
-    color: #161616;
 }
 
 .nav-inscription{
     font-weight: bold;
     margin-left: 24px;
+}
+.nav-inscription:hover{
+    border-top: none;
 }
 
 /** Présentation et recherche **/
@@ -87,7 +94,7 @@ h2 {
 
 #input-recherche {
     border: 1px solid #F2F2F2;
-    padding: 10px 24px;
+    padding: 10px 0 10px 14px;
     font-weight: bold;
     font-size: large;
 }
@@ -102,7 +109,7 @@ h2 {
 .filtres ul{
     display: flex;
     list-style-type: none;
-    margin: 32px;
+    margin: 0 0 12px 0;
 }
 
 .filtres li{
@@ -130,10 +137,11 @@ h2 {
 .conclusion-filtres{
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .conclusion-filtres i{
-    border: #F2F2F2 solid 1px;
+    border: #cbcbcb solid 1px;
     border-radius: 50%;
     height: 9px;
     width: 9px;
@@ -148,11 +156,16 @@ h2 {
     font-weight: 500;
 }
 
+.conclusion-filtres span{
+    text-align: center;
+}
+
 /*Partie principale hébergements*/
 
 .conteneur-principal{
     display: flex;
     border: black 1px solid;
+    width: 100%;
 }
 
 .hebergements{
@@ -166,8 +179,7 @@ h2 {
     background-color: #F2F2F2;
     border-radius: 12px;
     padding: 18px;
-    width: 50%;
-    height: 40%;
+    width: 66%;
 }
 
 .conteneur-hebergements img{
@@ -179,21 +191,26 @@ h2 {
 
 /*Cadres éléments hébergements */
 
-.element1{
+.element{
     display: flex;
     flex-direction: column;
     align-items: space-evenly;
     flex-wrap: wrap;
     background-color: white;
     border-radius: 18px;
-    width: 226px;
+    width: 275px;
     height: 196px;
     margin-right: 30px;
     margin-bottom: 30px;
     white-space: nowrap;
 }
 
-.element1 p{
+.element a{
+    font-weight: bold;
+    color: black;
+}
+
+.element p{
     padding-bottom: 0px;
     margin-top: 1px;
     margin-bottom: 2px;
@@ -201,115 +218,7 @@ h2 {
     padding-right: 16px;
 }
 
-.element2{
-    display: flex;
-    flex-direction: column;
-    align-items: space-evenly;
-    flex-wrap: wrap;
-    background-color: white;
-    width: 226px;
-    height: 196px;
-    border-radius: 18px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    white-space: nowrap;
-}
 
-.element2 p{
-    padding-bottom: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-.element3{
-    display: flex;
-    flex-direction: column;
-    align-items: space-evenly;
-    flex-wrap: wrap;
-    background-color: white;
-    width: 226px;
-    height: 196px;
-    border-radius: 18px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    white-space: nowrap;
-}
-
-.element3 p{
-    padding-bottom: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-.element4{
-    display: flex;
-    flex-direction: column;
-    align-items: space-evenly;
-    flex-wrap: wrap;
-    background-color: white;
-    width: 226px;
-    height: 196px;
-    border-radius: 18px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    white-space: nowrap;
-}
-
-.element4 p{
-    padding-bottom: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-.element5{
-    display: flex;
-    flex-direction: column;
-    align-items: space-evenly;
-    flex-wrap: wrap;
-    background-color: white;
-    width: 226px;
-    height: 196px;
-    border-radius: 18px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    white-space: nowrap;
-}
-
-.element5 p{
-    padding-bottom: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-.element6{
-    display: flex;
-    flex-direction: column;
-    align-items: space-evenly;
-    flex-wrap: wrap;
-    background-color: white;
-    width: 226px;
-    height: 196px;
-    border-radius: 18px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    white-space: nowrap;
-}
-
-.element6 p{
-    padding-bottom: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 16px;
-    padding-right: 16px;
-}
 
 .etoiles{
     padding-left: 15px;
@@ -318,16 +227,12 @@ h2 {
 
 /*Les plus populaires */
 
-.conteneur-populaires{
-    border: #F2F2F2 1px solid;
-    background-color: #F2F2F2;
-    border-radius: 12px;
-    padding: 18px;
-    margin-left: 20%;
+.populaire{
+    display: flex;
 }
 
-.elements-populaire{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+.populaire img{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 36px 0 0 36px;
 }
