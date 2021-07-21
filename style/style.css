@@ -37,6 +37,7 @@ nav li:hover{
 
 nav{
     font-size: 16px;
+    margin-right: 13em;
 }
 
 .nav-hebergement {
@@ -177,9 +178,9 @@ h2 {
 .conteneur-hebergements{
     border: #F2F2F2 1px solid;
     background-color: #F2F2F2;
-    border-radius: 12px;
-    padding: 18px;
-    width: 66%;
+    border-radius: 18px;
+    padding: 18px 0px 0 28px;
+    max-width: 56%;
 }
 
 .conteneur-hebergements img{
@@ -190,6 +191,11 @@ h2 {
 }
 
 /*Cadres éléments hébergements */
+
+.element:hover{
+    border: #F2F2F2 1px solid;
+    box-shadow: 10px 5px 5px black;
+}
 
 .element{
     display: flex;
@@ -218,21 +224,66 @@ h2 {
     padding-right: 16px;
 }
 
-
-
-.etoiles{
-    padding-left: 15px;
-    padding-bottom: 6px;
+#afficher-plus{
+    font-weight: bold;
 }
 
 /*Les plus populaires */
 
+.conteneur-populaires{
+    border: #F2F2F2 1px solid;
+    background-color: #F2F2F2;
+    border-radius: 18px;
+    padding: 18px 28px 0 28px;
+    margin-left: 2%;
+    width: 25%;
+}
+
+.alignement-titre-populaire{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.elements-populaire{
+    padding-right: 18px;
+}
+
 .populaire{
     display: flex;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 18px;
+    margin: 24px 0;
 }
 
 .populaire img{
     width: 9rem;
-    object-fit: contain;
-    border-radius: 36px 0 0 36px;
+    height: 9em;
+    object-fit: cover;
+    border-radius: 18px 0 0 18px;
+    margin: 6px;
+}
+
+/*Etoiles notation*/
+
+.notation-hebergements{
+    padding-left: 15px;
+    padding-bottom: 6px;
+}
+
+.notation-populaire{
+    padding-top: 30px;
+    padding-left: 0px;
+}
+
+.etoile-bleue{
+    color: #0065FC;
+}
+
+.etoile-vide{
+    color: #e2e2e2;
 }
