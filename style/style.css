@@ -1,3 +1,13 @@
+
+/*grand écran : 
+ - nav{margin-right:13em;}
+ - .conteneur-element{max-width:66%;}
+ petit écran :
+ - nav{margin-right:1em;}
+ - .conteneur-element{max-width:56%;}
+*/
+
+
 body{
     margin: 0 8em 0 8em;
     font-family: 'Raleway', sans-serif;
@@ -37,7 +47,7 @@ nav li:hover{
 
 nav{
     font-size: 16px;
-    margin-right: 13em;
+    margin-right: 1em;
 }
 
 .nav-hebergement {
@@ -165,7 +175,6 @@ h2 {
 
 .conteneur-principal{
     display: flex;
-    border: black 1px solid;
     width: 100%;
 }
 
@@ -180,7 +189,7 @@ h2 {
     background-color: #F2F2F2;
     border-radius: 18px;
     padding: 18px 0px 0 28px;
-    max-width: 56%;
+    max-width: 66%;
 }
 
 .conteneur-hebergements img{
@@ -206,8 +215,7 @@ h2 {
     border-radius: 18px;
     width: 275px;
     height: 196px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin: 30px 30px 30px 0;
     white-space: nowrap;
 }
 
@@ -268,6 +276,11 @@ h2 {
     margin: 6px;
 }
 
+.populaire:hover{
+    border: #F2F2F2 1px solid;
+    box-shadow: 10px 5px 5px black;
+}
+
 /*Etoiles notation*/
 
 .notation-hebergements{
@@ -286,4 +299,80 @@ h2 {
 
 .etoile-vide{
     color: #e2e2e2;
+}
+
+/*Activités à Marseille*/
+
+.activites{
+    width: 100%;
+    margin-top: 3em;
+}
+
+.conteneur-activites-global{
+    display: flex;
+}
+
+.conteneur-activites-1{
+    display: flex;
+    width: 50%;
+}
+
+.conteneur-activites-2{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.conteneur-activites-3{
+    display: flex;
+    width: 50%;
+}
+
+.conteneur-activites-4{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.activites-carte-extra-grand{
+    border-radius: 18px;
+}
+
+.activites-carte-extra-grand img{
+    width: 90%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.activites-carte-grand{
+    border-radius: 18px;
+}
+
+.activites-carte-grand img{
+    width: 90%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.activites-carte-moyen{
+    height:45%;
+    border: 1px solid white;
+    border-radius: 18px;
+}
+
+.activites-carte-moyen p{
+    margin: 20px 0 0 0;
+}
+
+.activites-carte-moyen img{
+    width: 90%;
+     height: 65%;
+    object-fit: cover;
+}
+
+.activites-carte-petit img{
+    width: 90%;
+    height: 43%;
+    object-fit: cover;
+    margin-top: 24px;
 }
