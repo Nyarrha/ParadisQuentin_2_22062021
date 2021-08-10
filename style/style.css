@@ -145,6 +145,10 @@ h2 {
     background-color: #DEEBFF;
 }
 
+.filtres li:hover{
+    background-color: #DEEBFF;
+}
+
 .conclusion-filtres{
     display: flex;
     align-items: center;
@@ -216,7 +220,7 @@ h2 {
     height: 196px;
     margin: 30px 30px 30px 0;
     white-space: nowrap;
-    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.74);
+    box-shadow: 5px 5px 5px 5px rgba(233,233,233,0.75);
 }
 
 .element a{
@@ -265,7 +269,7 @@ h2 {
     background-color: white;
     border-radius: 18px;
     margin: 24px 0;
-    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.74);
+    box-shadow: 5px 5px 5px 5px rgba(233,233,233,0.75);
 }
 
 .populaire img{
@@ -331,7 +335,7 @@ h2 {
 
 figure {
     border-radius: 18px;
-    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.74);
+    box-shadow: 1px 1px 5px 5px rgba(233,233,233,0.75);
     display: flex;
     flex-flow: column;
     margin: 0 40px 0 0;
@@ -394,3 +398,25 @@ figcaption {
 
 /** Responsive mobile **/
 
+@media screen and (min-width: 375px) and (max-width: 414px){
+
+    body{
+        margin: 0;
+    }
+
+    #logo{
+        margin: 10px 0 0 10px;
+        height: 85px;
+    }
+
+    #logo img{
+        width: 75%;
+    }
+    .presentation h2{
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0 40px 0 10px;
+        text-align: left;
+    }
+
+}
