@@ -25,89 +25,112 @@ a:hover{
 /** Header et navigation **/
 header {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
 }
 
-#logo img {
-    width: 20%;
+#logo {
+    width: 10%;
+    height: 10%;
 }
 
-header ul{
-    list-style-type: none;
+.bouton-nav
+{
+    padding: 30px;
+    border-top: solid 3px white;
 }
 
-nav li {
-    display: inline-block;
-    text-align: center;
-    padding-top: 28px;
-}
-nav li:hover{
+.bouton-nav:hover{
     border-top: solid 1px #0065FC;
 }
 
-nav{
-    font-size: 16px;
-    margin-right: 1em;
+nav
+{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
 }
 
-.nav-hebergement {
-    margin-right: 24px;
-}
-
-.nav-activites{
-    margin-left: 24px;
-    margin-right: 24px;
-}
-
-.nav-inscription{
+#inscription
+{
+    padding: 33px;
+    font-size: 1em;
     font-weight: bold;
-    margin-left: 24px;
-}
-.nav-inscription:hover{
-    border-top: none;
 }
 
 /** Présentation et recherche **/
-h2 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0;
+#rechercher
+{
+    font-weight: 500;
+    margin-top: -10px;
+    margin-bottom: 25px;
 }
 
-.presentation strong{
-    font-weight: 500;
-    font-size: 14px;
+#rechercher h2{
+    margin-top: -10px;
+}
+
+#pictogramme{
+    font-size: 1.2em;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: center;
+    background-color:  #F2F2F2;
+    border-radius: 15px 0 0 15px;
+}
+
+#formulaire-recherche{
+    display: inline-flex;
+    height: 50px;
+    border: solid 0.5px #F2F2F2;
+    border-radius: 20px;
+}
+
+#champ-recherche input{
+    border: none;
+    vertical-align: center;
+    height: 48px;
+    width: 220px;
+    padding-left: 20px;
+    font-size: 1.1em;
+    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#champ-recherche input::placeholder
+{
+    color:black;
 }
 
 /**btn-rechercher**/
-.btn-rechercher {
-    background-color: #0065FC;
+
+#bouton-pc button{
     border: none;
+    height: 50px;
+    width: 150px;
+    background-color:#0065FC ;
+    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+    font-size: 18px;
     font-weight: bold;
     color: white;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 14px;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
 }
 
-#rechercher{
-    display: flex;
-    align-items: center;
-}
-
-.fa-map-marker-alt:before {
-    content: "\f3c5";
-    background-color: #F2F2F2;
-    padding: 14px;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-}
-
-#input-recherche {
-    border: 1px solid #F2F2F2;
-    padding: 10px 0 10px 14px;
+#bouton-mobile button{
+    border: none;
+    height: 50px;
+    width: 50px;
+    background-color:#0065FC ;
+    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
     font-weight: bold;
-    font-size: large;
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+    cursor: pointer;
+    display: none;
 }
 
 /** Filtres de recherche **/
@@ -396,27 +419,78 @@ figcaption {
     padding-bottom: 12px;
 }
 
-/** Responsive mobile **/
+/** MEDIA QUERIES **/
 
-@media screen and (min-width: 375px) and (max-width: 414px){
+@media screen and (min-width: 1200px) and (max-width: 1500px){
+    body{
+        margin: 0 1em 0 1em;
+    }
+}
+
+@media screen and (max-width: 500px){
 
     body{
-        margin: 0;
+        margin: 0 10px 0 10px;
+        width: 395px;
+    }
+
+    header
+    {
+        display: inline-flex;
+         flex-wrap: wrap;
+        justify-content: space-between;
+        width: 375px;
+    } 
+    
+    header :nth-child(2)
+    {
+        order:3 ;
     }
 
     #logo{
-        margin: 10px 0 0 10px;
-        height: 85px;
+        width: 165px;
+        margin: 20px 0 0 10px;
     }
 
-    #logo img{
-        width: 75%;
+    nav{
+        border-bottom: solid 2px #F2F2F2;
+        width: 95%;
+        justify-content: center;
+        margin-left: 0;
+        margin-bottom: 20px;
     }
-    .presentation h2{
-        font-size: 24px;
-        font-weight: bold;
-        margin: 0 40px 0 10px;
-        text-align: left;
+     
+    nav :nth-child(1){
+        margin-right: 40px;
     }
+
+    .bouton-nav{
+        padding: 15px;
+        border-top-style: none;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        border-bottom-color: white;
+    }
+
+   .bouton-nav:hover{
+        border-bottom-color:#0065FC;
+    }  
+
+    #inscription{
+        padding-top: 48px;
+    }
+
+    #bouton-pc button{
+        display: none;
+    }
+
+    #bouton-mobile button{
+        display: initial;
+    }
+
+    .conteneur-principal
+    /*.conteneur-principal :nth-child(2){
+        order: 1;
+    }*/
 
 }

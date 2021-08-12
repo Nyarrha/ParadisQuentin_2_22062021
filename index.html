@@ -14,32 +14,48 @@
 <body>
 
 <!-- Header et navigation -->
-
 <header>
-    <h1 id="logo"><img src="images/logo/Reservia@3x.png" alt="logo-reservia" /></h1>
+    <img id="logo" src="images/logo/Reservia@3x.png" alt="Logo de Reservia">
     <nav>
-        <ul class="menu-nav">
-            <li class="nav-hebergement"><a href=#>Hébergements</a></li>
-            <li class="nav-activites"><a href=#>Activités</a></li>
-            <li class="nav-inscription"><a href=#>S'inscrire</a></li>
-        </ul>
+      <div class="bouton-nav"><a href="#hebergement">Hébergements</a></div> 
+      <div class="bouton-nav"><a href="#activite">Activités</a></div> 
     </nav>
+    <div id="inscription"><a href="#">S'inscrire</a></div>
 </header>
 
 <!-- Présentation et recherche -->
 
-<div class="presentation">
+
+
+<section id="rechercher">   
+    <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
+    <p id="intro">En plein centre ville ou en pleine nature</p>
+        <form id="formulaire-recherche">
+          <div id="pictogramme">
+              <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div id="champ-recherche">
+              <input type="text" id="ville" name="ville" placeholder="Marseille, France"> 
+          </div>
+          <div id="bouton-pc">
+            <button>Rechercher</button>    
+          </div>
+          <div id="bouton-mobile">
+            <button><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+
+<!-- <div class="presentation">
     <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
     <p><strong>En plein centre ville ou en pleine nature</strong></p>
-</div>
-
+    </div>
 <form action="resultathebergement.html" method="get" class="recherche">
 <div id="rechercher">
     <span><i class="fas fa-map-marker-alt"></i></span>
     <input type="text" id="input-recherche" name="hebergement" maxlength="60" value="Marseille, France">
     <button class="btn-rechercher" type="submit"><span>Rechercher</span></button>
 </div>
-</form>
+</form> -->
 
 <!-- Filtres de recherche -->
 <div class="filtres">
@@ -54,6 +70,7 @@
 <div class="conclusion-filtres">
     <span><i class="fas fa-info"></i></span><p>Plus de 500 logements sont disponibles dans cette ville</p>
 </div>
+</section>
 
 <!--Partie principale - Hébergements-->
 <div class="conteneur-principal">
@@ -229,18 +246,18 @@
 </section>
 <footer class="bas-de-page">
     <ul>
-        <li><a href="#"><strong>A propos</strong></a></li>
+        <li><strong>A propos</strong></li>
         <li><a href="#">Fonctionnement du site</a></li>
         <li><a href="#">Conditions générales de vente</a></li>
         <li><a href="#">Données et confidentialité</a></li>
     </ul>
     <ul>
-        <li><a href="#"><strong>Nos hébergements</strong></a></li>
+        <li><strong>Nos hébergements</strong></li>
         <li><a href="#">Charte qualité</a></li>
         <li><a href="#">Soumettre votre hôtel</a></li>
     </ul>
     <ul>
-        <li><a href="#"><strong>Assistance</strong></a></li>
+        <li><strong>Assistance</strong></li>
         <li><a href="#">Centre d'aide</a></li>
         <li><a href="#">Nous contacter</a></li>
     </ul>
