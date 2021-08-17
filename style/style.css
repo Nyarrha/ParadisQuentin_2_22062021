@@ -271,7 +271,7 @@ nav
     border-radius: 18px;
     padding: 18px 28px 0 28px;
     margin-left: 2%;
-    width: 25%;
+    max-width: 25%;
 }
 
 .alignement-titre-populaire{
@@ -368,8 +368,8 @@ figure:hover{
     box-shadow: 10px 5px 5px black;
 }
 
-figcaption {
-    padding: 10px 0 10px 10px;
+figure p {
+    padding: 0 0 0 10px;
     text-align: left; 
     font-weight: bold;
 }
@@ -430,16 +430,22 @@ figcaption {
 @media screen and (max-width: 500px){
 
     body{
-        margin: 0 10px 0 10px;
-        width: 395px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    h3{
+        font-size: 1.5em;
+        margin-bottom: 5px;
+        margin-left: 5px;
     }
 
     header
     {
         display: inline-flex;
-         flex-wrap: wrap;
+        flex-wrap: wrap;
         justify-content: space-between;
-        width: 375px;
+        margin-left: 10px;
     } 
     
     header :nth-child(2)
@@ -462,6 +468,16 @@ figcaption {
      
     nav :nth-child(1){
         margin-right: 40px;
+    }
+
+    #rechercher {
+        font-weight: 500;
+        margin-bottom: 0px;
+        margin-left: 10px;
+    }
+
+    #rechercher h2 {
+        margin-top: 10px;
     }
 
     .bouton-nav{
@@ -488,9 +504,73 @@ figcaption {
         display: initial;
     }
 
-    .conteneur-principal
-    /*.conteneur-principal :nth-child(2){
-        order: 1;
-    }*/
+    .filtres {
+        display: flex;
+        width: 355px;
+        flex-direction: column;
+    }
+
+    .filtres h2{
+        margin-top: 15px;
+    }
+
+    .filtres ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0 0 12px 0;
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .filtres li {
+        border: 1px solid #F2F2F2;
+        border-radius: 28px;
+        padding-right: 10px;
+        margin: 5px;
+        text-decoration: none;
+    }
+
+    .conteneur-principal {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .conteneur-populaires {
+        border: #F2F2F2 1px solid;
+        background-color: #F2F2F2;
+        border-radius: 0;
+        padding: 0px 10px 0 10px;
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .conteneur-hebergements {
+        border: none;
+        background-color: white;
+        padding: 0 0 0 10px;
+        max-width: 100%;
+    }
+
+    .element {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: white;
+        border-radius: 18px;
+        width: 90%;
+        height: 196px;
+        margin: 10px 0 10px 0;
+        box-shadow: 5px 5px 5px 5px rgb(233 233 233 / 75%);
+    }
+
+
+
+    #afficher-plus {
+        font-weight: bold;
+        font-size: 1.25em;
+        margin-left: 10px;
+    }
+
 
 }
