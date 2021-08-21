@@ -353,7 +353,6 @@ nav
     flex-wrap: wrap;
     justify-content: space-between;
 }
-/* ---                              ---*/
 
 figure {
     border-radius: 18px;
@@ -420,14 +419,8 @@ figure p {
 
 /** MEDIA QUERIES **/
 
-@media screen and (min-width: 1200px) and (max-width: 1500px){
-    body{
-        margin: 0 1em 0 1em;
-    }
-}
-
 @media screen and (max-width: 500px){
-
+/* MOBILE */
     body{
         margin-left: 0;
         margin-right: 0;
@@ -467,6 +460,10 @@ figure p {
      
     nav :nth-child(1){
         margin-right: 40px;
+    }
+
+    nav:hover{
+        border-top-style: none;
     }
 
     #rechercher {
@@ -517,8 +514,8 @@ figure p {
         display: flex;
         list-style-type: none;
         margin: 0 0 12px 0;
-        flex-direction: column;
         padding-left: 0;
+        flex-wrap: wrap;
     }
 
     .filtres li {
@@ -608,5 +605,198 @@ figure p {
 
     .bas-de-page{
         flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px){
+/* TABLETTE */
+
+    body{
+        margin: 0 0 0 10px;
+    }
+
+    .filtres {
+        display: flex;
+        align-items: center;
+    }
+
+    #rechercher h2 {
+        margin-top: 0;
+    }
+
+    .filtres ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0 0 12px 0;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (min-width: 1001px) and (max-width: 1200px){
+/* LAPTOP */
+    body{
+        margin: 0 0 0 3.8em;
+    }
+
+    .conteneur-principal {
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .conteneur-hebergements{
+        padding: 18px 0 0 18px;
+        width: 95%;
+    }
+
+    .conteneur-populaires{
+        max-width: 95%;
+        margin-left: 0;
+        margin-bottom: 40px;
+        padding: 18px 18px 0 18px;
+    }
+
+    .conteneur-hebergements{
+        max-width: 95%;
+        padding: 18px 18px 0 18px;
+    }
+
+    .conteneur-hebergements h3{
+        margin: 0;
+    }
+
+    .elements{
+        width: 275px;
+        height: 196px;
+        margin: 25px 22px 20px 0;
+    }
+
+    .populaire img {
+        width: 8rem;
+        height: 9em;
+    }
+
+    .populaire{
+        width: 350px;
+    }
+
+    .elements-populaires{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #alignement-texte-populaire{
+        margin-bottom: 0;
+    }
+
+    .notation-populaire {
+        padding-top: 20px;
+        padding-left: 0px;
+    }
+
+    .activites{
+        margin-top: 1em;
+    }
+
+    .activites h3{
+        margin: 0 0 20px 0;
+    }
+
+    figure{
+        margin: 0 22px 0 0;
+    }
+
+    .activites-carte-extra-grand img {
+        height: 21em;
+        width: 13.8rem;
+    }
+
+    .activites-carte-grand img {
+        height: 8em;
+        width: 13.8em;
+    }
+
+    .activites-carte-grand{
+        width: 13.8em;
+    }
+
+    .activites-carte-petit img {
+        height: 6em;
+        width: 13.8rem;
+    }
+
+    .activites-carte-petit{
+        width: 13.8em;
+    }
+
+    .activites-carte-moyen img {
+        height: 9em;
+        width: 13.8rem;
+    }
+
+    .activites-carte-moyen{
+        width: 13.8em;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1500px){
+/* LAPTOP Grand écran */
+    body{
+        margin: 0 1em 0 1em;
+    }
+
+    .conteneur-hebergements{
+        padding: 18px 0 0 18px;
+    }
+
+    .conteneur-hebergements h3{
+        margin: 0;
+    }
+
+    .elements{
+        width: 250px;
+        height: 196px;
+        margin: 25px 22px 20px 0;
+    }
+
+    .populaire img {
+        width: 7rem;
+        height: 8em;
+    }
+
+    .notation-populaire {
+        padding-top: 20px;
+        padding-left: 0px;
+    }
+
+    .activites h3{
+        margin: 0 0 20px 0;
+    }
+
+    figure{
+        margin: 0 22px 0 0;
+    }
+
+    .activites-carte-extra-grand img {
+        height: 24em;
+        width: 17rem;
+    }
+
+    .activites-carte-grand img {
+        height: 10em;
+        width: 20em;
+    }
+
+    .activites-carte-petit img {
+        height: 8em;
+        width: 20rem;
+    }
+
+    .activites-carte-moyen img {
+        height: 9em;
+        width: 20rem;
     }
 }
