@@ -400,6 +400,11 @@ figure p {
     border-radius: 18px 18px 0 0;
 }
 
+.alignement-tablette1, .alignement-tablette2{
+    display: flex;
+    margin: 0;
+}
+
 /* Footer */
 
 .bas-de-page{
@@ -603,33 +608,144 @@ figure p {
         border-radius: 18px 18px 0 0;
     }
 
+    .alignement-tablette1, .alignement-tablette2{
+        display: none;
+        margin: 0;
+    }
+
     .bas-de-page{
         flex-direction: column;
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1000px){
+@media screen and (min-width: 501px) and (max-width: 1000px){
 /* TABLETTE */
 
     body{
-        margin: 0 0 0 10px;
+        margin: 0;
     }
 
-    .filtres {
+    header{
+        margin-left: 10px;
+    }
+
+    #rechercher{
+        margin-left: 10px;
+        margin-top: 25px;
+    }
+
+    .filtres{
         display: flex;
         align-items: center;
     }
 
-    #rechercher h2 {
+    #rechercher h2{
         margin-top: 0;
     }
 
-    .filtres ul {
+    .filtres ul{
         display: flex;
         list-style-type: none;
         margin: 0 0 12px 0;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+
+    .conteneur-principal{
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .conteneur-populaires{
+        max-width: 100%;
+        padding: 18px 10px 0 18px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .populaire img{
+        width: 8rem;
+        height: 9em;
+    }
+
+    .populaire{
+        width: 350px;
+    }
+
+    .elements-populaires{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .conteneur-hebergements{
+        max-width: 100%;
+        padding: 18px 10px 0 18px;
+        border: none;
+        background-color: white;
+    }
+
+    .hebergements {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .activites{
+        margin-left: 10px;
+    }
+
+    .conteneur-activites-global {
+        display: flex;
+        margin-bottom: 40px;
+        flex-direction: column;
+    }
+
+    .alignement-tablette1{
+        margin-bottom: 40px;
+    }
+
+    .alignement-tablette1, .alignement-tablette2{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .activites-carte-extra-grand img {
+        height: 23em;
+        width: 19em;
+    }
+
+    .activites-carte-extra-grand{
+        width: 19em;
+    }
+
+    .activites-carte-grand img {
+        height: 10em;
+        width: 19em;
+    }
+
+    .activites-carte-grand{
+        width: 19em;
+    }
+
+    .activites-carte-petit img {
+        height: 8em;
+        width: 19em;
+    }
+
+    .activites-carte-petit{
+        width: 19em;
+    }
+
+    .activites-carte-moyen img {
+        height: 9em;
+        width: 19rem;
+    }
+
+    .activites-carte-moyen{
+        width: 19em;
     }
 }
 
@@ -640,7 +756,7 @@ figure p {
         margin: 0 0 0 3.8em;
     }
 
-    .conteneur-principal {
+    .conteneur-principal{
         display: flex;
         width: 100%;
         flex-direction: column-reverse;
@@ -665,6 +781,12 @@ figure p {
 
     .conteneur-hebergements h3{
         margin: 0;
+    }
+
+    .hebergements {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .elements{
@@ -740,6 +862,17 @@ figure p {
     .activites-carte-moyen{
         width: 13.8em;
     }
+
+    .alignement-tablette1, .alignement-tablette2{
+        display: flex;
+        margin: 0;
+    }
+
+    .conteneur-activites-global {
+        display: flex;
+        margin-bottom: 40px;
+        justify-content: space-evenly;
+    }
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1500px){
@@ -782,7 +915,7 @@ figure p {
 
     .activites-carte-extra-grand img {
         height: 24em;
-        width: 17rem;
+        width: 20rem;
     }
 
     .activites-carte-grand img {
@@ -798,5 +931,10 @@ figure p {
     .activites-carte-moyen img {
         height: 9em;
         width: 20rem;
+    }
+
+    .alignement-tablette1, .alignement-tablette2{
+        display: flex;
+        margin: 0;
     }
 }
